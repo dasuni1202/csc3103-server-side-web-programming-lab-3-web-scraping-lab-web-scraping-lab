@@ -1,4 +1,7 @@
-<form action="scrape" method="GET">
-  <input type="url" name="url" placeholder="Enter URL">
+<form action="scrape" method="post">
+  <input type="text" name="url" placeholder="Enter URL" required />
+  <label><input type="checkbox" name="options" value="title" /> Title</label>
+  <label><input type="checkbox" name="options" value="links" /> Links</label>
+  <label><input type="checkbox" name="options" value="images" /> Images</label>
   <button type="submit">Scrape</button>
 </form>
